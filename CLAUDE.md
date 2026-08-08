@@ -17,7 +17,7 @@ No test framework or linter is configured.
 
 ## Deployment
 
-GitHub Actions deploys to GitHub Pages on push to `main` (`.github/workflows/deploy.yml`). The Vite `base` is set to `/Yashasve-Website/` for GitHub Pages path prefix.
+Deployed via AWS Amplify (build spec in `amplify.yml`), which builds `npm run build` and serves `dist/` from the domain root. The Vite `base` is `/`.
 
 ## Architecture
 
