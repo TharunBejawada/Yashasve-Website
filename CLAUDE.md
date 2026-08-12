@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A single-page dermatology practice website for Dr. Yashasve at Suseela Hospital, RK Puram, Hyderabad. Built with React 19, TypeScript, Vite, and Tailwind CSS (loaded via CDN). Uses Framer Motion for animations and Lucide React for icons.
+A single-page dermatology practice website for Dr. Yashasve at Suseela Hospital, Kothapet, LB Nagar, Hyderabad. Built with React 19, TypeScript, Vite, and Tailwind CSS (loaded via CDN). Uses Framer Motion for animations and Lucide React for icons.
 
 ## Commands
 
