@@ -11,8 +11,8 @@ export const DOCTOR_PROFILE: DoctorProfile = {
   bio: "Dr. Yashasve is a leading dermatologist known for his ethical, evidence-based approach to skin and hair care. With a focus on sustainable results, he specialises in treating chronic skin conditions and performing advanced aesthetic procedures with precision and safety.",
   hospital: "Suseela Hospital",
   location: "RK Puram, Hyderabad, Telangana",
-  phone: "+91 98765 43210", // PLACEHOLDER: Replace with real clinic number
-  whatsapp: "919876543210", // PLACEHOLDER: Replace with real WhatsApp number
+  phone: "+91 81431 79457",
+  whatsapp: "918143179457",
   email: "contact@dryashasve.com", // PLACEHOLDER: Replace with real email
   mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.463376789!2d78.53!3d17.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae1!2sSuseela%20Hospital!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin", // PLACEHOLDER: Replace with real Google Maps embed URL
   hours: [
