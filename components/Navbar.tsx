@@ -277,7 +277,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, onMenuOpen, onMenuCl
                 className="mt-12 pt-12 border-t border-white/10 shrink-0"
               >
                 <p className="text-white/40 text-sm uppercase tracking-widest mb-2">Locate Us</p>
-                <p className="text-white text-lg">Suseela Hospital, RK Puram</p>
+                <p className="text-white text-lg">Suseela Hospital, Kothapet, LB Nagar</p>
               </motion.div>
             </nav>
           </motion.div>

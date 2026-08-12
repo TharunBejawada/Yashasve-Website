@@ -10,10 +10,10 @@ export const DOCTOR_PROFILE: DoctorProfile = {
   regNumber: "TSMC-XXXXX", // PLACEHOLDER: Replace with real TSMC registration number
   bio: "Dr. Yashasve is a leading dermatologist known for his ethical, evidence-based approach to skin and hair care. With a focus on sustainable results, he specialises in treating chronic skin conditions and performing advanced aesthetic procedures with precision and safety.",
   hospital: "Suseela Hospital",
-  location: "RK Puram, Hyderabad, Telangana",
+  location: "Kothapet, LB Nagar, Hyderabad, Telangana",
   phone: "+91 81431 79457",
   whatsapp: "918143179457",
-  email: "contact@dryashasve.com", // PLACEHOLDER: Replace with real email
+  email: "dryashasvedermatologist@gmail.com", // PLACEHOLDER: Replace with real email
   mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.463376789!2d78.53!3d17.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae1!2sSuseela%20Hospital!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin", // PLACEHOLDER: Replace with real Google Maps embed URL
   hours: [
     "Mon - Sat: 10:00 AM - 01:00 PM",
@@ -738,7 +738,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: '3',
     name: "Mohammed F.",
     treatment: "Hair Fall Therapy",
-    text: "Honest advice. Dr. Yashasve told me exactly what to expect from PRP and didn't make false promises. I'm seeing good density improvement now. Best dermatologist in RK Puram.",
+    text: "Honest advice. Dr. Yashasve told me exactly what to expect from PRP and didn't make false promises. I'm seeing good density improvement now. Best dermatologist in Kothapet, LB Nagar.",
     rating: 5,
     date: "3 weeks ago",
   },
@@ -931,8 +931,8 @@ export const CLINIC_PHOTOS: ClinicPhoto[] = [
   },
   {
     src: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?q=80&w=800&auto=format&fit=crop',
-    alt: 'Suseela Hospital exterior in RK Puram, Hyderabad',
-    caption: 'Suseela Hospital, RK Puram',
+    alt: 'Suseela Hospital exterior in Kothapet, LB Nagar, Hyderabad',
+    caption: 'Suseela Hospital, Kothapet, LB Nagar',
     span: 'wide',
   },
 ];
