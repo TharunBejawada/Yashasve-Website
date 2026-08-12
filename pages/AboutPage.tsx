@@ -57,9 +57,8 @@ export const AboutPage: React.FC = () => {
             <Reveal delay={0.2}>
               <div className="relative max-w-md mx-auto">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                  {/* PLACEHOLDER: Replace with real doctor photo */}
                   <img
-                    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                    src="/images/doctor/dr-yashasve.jpg"
                     alt={DOCTOR_PROFILE.name}
                     className="w-full h-full object-cover"
                     width={800}
