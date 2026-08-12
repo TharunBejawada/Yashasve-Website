@@ -19,7 +19,7 @@ export const About: React.FC = () => (
           <Reveal>
             <div className="aspect-[4/5] max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                src="/images/doctor/dr-yashasve.jpg"
                 alt={DOCTOR_PROFILE.name}
                 className="w-full h-full object-cover"
                 loading="lazy"

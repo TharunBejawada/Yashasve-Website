@@ -13,9 +13,8 @@ export const BioModal: React.FC<BioModalProps> = ({ isOpen, onClose }) => (
     <div className="space-y-8">
       <div className="flex gap-6 items-start">
         <div className="w-24 h-24 shrink-0 bg-stone-100 rounded-sm overflow-hidden">
-          {/* PLACEHOLDER: Replace with real doctor photo */}
           <img
-            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop"
+            src="/images/doctor/dr-yashasve.jpg"
             alt={DOCTOR_PROFILE.name}
             className="w-full h-full object-cover"
             loading="lazy"
