@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import { Phone, ChatCircle as MessageCircle, EnvelopeSimple as Mail, MapPin, Clock, Calendar, CaretDown as ChevronDown, ArrowSquareOut as ExternalLink } from '@phosphor-icons/react';
 import { DOCTOR_PROFILE, APPOINTMENT_SERVICES } from '@/constants';
-import { Button, Input, Textarea, Reveal } from '@/components/ui';
+import { Button, Input, Textarea, Reveal, buildBookingWhatsAppLink } from '@/components/ui';
 import { StarRating } from '@/components/StarRating';
 
 export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // PLACEHOLDER: Wire to real form handler before launch
+    const data = new FormData(e.currentTarget);
+    const link = buildBookingWhatsAppLink(DOCTOR_PROFILE.whatsapp, {
+      name: String(data.get('name') || ''),
+      phone: String(data.get('phone') || ''),
+      email: String(data.get('email') || ''),
+      service: String(data.get('service') || ''),
+      date: String(data.get('date') || ''),
+      time: String(data.get('time') || ''),
+      message: String(data.get('message') || ''),
+    });
+    window.open(link, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -82,18 +92,18 @@ export const ContactPage: React.FC = () => {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="cp-name" className="sr-only">Full Name</label>
-                      <Input id="cp-name" required placeholder="Full Name" aria-label="Full Name" />
+                      <Input id="cp-name" name="name" required placeholder="Full Name" aria-label="Full Name" />
                     </div>
                     <div>
                       <label htmlFor="cp-phone" className="sr-only">Phone Number</label>
-                      <Input id="cp-phone" required type="tel" placeholder="Phone Number" aria-label="Phone Number" />
+                      <Input id="cp-phone" name="phone" required type="tel" placeholder="Phone Number" aria-label="Phone Number" />
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="cp-email" className="sr-only">Email Address</label>
-                      <Input id="cp-email" required type="email" placeholder="Email Address" aria-label="Email Address" />
+                      <Input id="cp-email" name="email" required type="email" placeholder="Email Address" aria-label="Email Address" />
                     </div>
                     <div className="relative">
                       <label htmlFor="cp-service" className="sr-only">Select Service</label>
@@ -116,24 +126,24 @@ export const ContactPage: React.FC = () => {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="relative">
                       <label htmlFor="cp-date" className="sr-only">Preferred Date</label>
-                      <Input id="cp-date" required type="date" aria-label="Preferred date" className="uppercase text-stone-500" />
+                      <Input id="cp-date" name="date" required type="date" aria-label="Preferred date" className="uppercase text-stone-500" />
                       <Calendar className="absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" size={18} aria-hidden="true" />
                     </div>
                     <div className="relative">
                       <label htmlFor="cp-time" className="sr-only">Preferred Time</label>
-                      <Input id="cp-time" required type="time" aria-label="Preferred time" className="text-stone-500" />
+                      <Input id="cp-time" name="time" required type="time" aria-label="Preferred time" className="text-stone-500" />
                       <Clock className="absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" size={18} aria-hidden="true" />
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="cp-message" className="sr-only">Message</label>
-                    <Textarea id="cp-message" placeholder="Describe your concern or the service you're interested in..." aria-label="Your message" />
+                    <Textarea id="cp-message" name="message" placeholder="Describe your concern or the service you're interested in..." aria-label="Your message" />
                   </div>
 
                   {submitted && (
                     <div role="alert" className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm">
-                      Thank you! Your appointment request has been received. We will contact you shortly.
+                      Thank you! We've opened WhatsApp with your appointment details — send the message to complete your request.
                     </div>
                   )}
 
