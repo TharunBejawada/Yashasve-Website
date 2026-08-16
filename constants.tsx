@@ -14,7 +14,7 @@ export const DOCTOR_PROFILE: DoctorProfile = {
   phone: "+91 81431 79457",
   whatsapp: "918143179457",
   email: "dryashasvedermatologist@gmail.com", // PLACEHOLDER: Replace with real email
-  mapLink: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9144094098665!2d78.54698757516448!3d17.36785108351603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f0883dbd7%3A0x44ea390247e683f9!2sDr%20Yashasve%20Chemudupati%20%7C%20Dermatologist%20in%20Kothapet!5e0!3m2!1sen!2sin!4v1786858793235!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+  mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9144094098665!2d78.54698757516448!3d17.36785108351603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f0883dbd7%3A0x44ea390247e683f9!2sDr%20Yashasve%20Chemudupati%20%7C%20Dermatologist%20in%20Kothapet!5e0!3m2!1sen!2sin!4v1786858793235!5m2!1sen!2sin",
   hours: [
     "Mon - Sat: 04:00 PM - 10:00 PM",
     "Sunday: By Appointment Only",
