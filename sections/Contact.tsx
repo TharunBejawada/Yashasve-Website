@@ -46,7 +46,7 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate: _onNavigate }) => 
                 </span>
               </div>
               <a
-                href={DOCTOR_PROFILE.mapLink}
+                href={DOCTOR_PROFILE.mapViewLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-primary-600 hover:text-primary-800 uppercase tracking-widest flex items-center gap-2"

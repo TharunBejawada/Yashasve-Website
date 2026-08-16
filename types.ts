@@ -72,6 +72,7 @@ export interface DoctorProfile {
   phone: string;
   whatsapp: string;
   mapLink: string;
+  mapViewLink: string;
   email: string;
   hours: string[];
   philosophy: string;
