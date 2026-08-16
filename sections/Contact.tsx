@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, CaretDown as ChevronDown, ChatCircle as MessageCircle, ArrowSquareOut as ExternalLink } from '@phosphor-icons/react';
 import { DOCTOR_PROFILE, APPOINTMENT_SERVICES } from '@/constants';
-import { Button, Input, Textarea, Reveal } from '@/components/ui';
+import { Button, Input, Textarea, Reveal, buildBookingWhatsAppLink } from '@/components/ui';
 import { StarRating } from '@/components/StarRating';
 
 interface ContactProps {
@@ -11,9 +11,19 @@ interface ContactProps {
 export const Contact: React.FC<ContactProps> = ({ onNavigate: _onNavigate }) => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // PLACEHOLDER: Wire to a real form handler (EmailJS, Formspree, etc.) before launch
+    const data = new FormData(e.currentTarget);
+    const link = buildBookingWhatsAppLink(DOCTOR_PROFILE.whatsapp, {
+      name: String(data.get('name') || ''),
+      phone: String(data.get('phone') || ''),
+      email: String(data.get('email') || ''),
+      service: String(data.get('service') || ''),
+      date: String(data.get('date') || ''),
+      time: String(data.get('time') || ''),
+      message: String(data.get('message') || ''),
+    });
+    window.open(link, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -76,18 +86,18 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate: _onNavigate }) => 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="contact-name" className="sr-only">Full Name</label>
-                    <Input id="contact-name" required placeholder="Full Name" aria-label="Full Name" />
+                    <Input id="contact-name" name="name" required placeholder="Full Name" aria-label="Full Name" />
                   </div>
                   <div>
                     <label htmlFor="contact-phone" className="sr-only">Phone Number</label>
-                    <Input id="contact-phone" required type="tel" placeholder="Phone Number" aria-label="Phone Number" />
+                    <Input id="contact-phone" name="phone" required type="tel" placeholder="Phone Number" aria-label="Phone Number" />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="contact-email" className="sr-only">Email Address</label>
-                    <Input id="contact-email" required type="email" placeholder="Email Address" aria-label="Email Address" />
+                    <Input id="contact-email" name="email" required type="email" placeholder="Email Address" aria-label="Email Address" />
                   </div>
                   <div className="relative">
                     <label htmlFor="contact-service" className="sr-only">Select Service</label>
@@ -110,24 +120,24 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate: _onNavigate }) => 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="relative">
                     <label htmlFor="contact-date" className="sr-only">Preferred Date</label>
-                    <Input id="contact-date" required type="date" aria-label="Preferred date" className="uppercase text-stone-500" />
+                    <Input id="contact-date" name="date" required type="date" aria-label="Preferred date" className="uppercase text-stone-500" />
                     <Calendar className="absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" size={18} aria-hidden="true" />
                   </div>
                   <div className="relative">
                     <label htmlFor="contact-time" className="sr-only">Preferred Time</label>
-                    <Input id="contact-time" required type="time" aria-label="Preferred time" className="text-stone-500" />
+                    <Input id="contact-time" name="time" required type="time" aria-label="Preferred time" className="text-stone-500" />
                     <Clock className="absolute right-0 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" size={18} aria-hidden="true" />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="contact-message" className="sr-only">Message</label>
-                  <Textarea id="contact-message" placeholder="Describe your concern or the service you're interested in..." aria-label="Your message" />
+                  <Textarea id="contact-message" name="message" placeholder="Describe your concern or the service you're interested in..." aria-label="Your message" />
                 </div>
 
                 {submitted && (
                   <div role="alert" className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm">
-                    Thank you! Your appointment request has been received. We will contact you shortly.
+                    Thank you! We've opened WhatsApp with your appointment details — send the message to complete your request.
                   </div>
                 )}
 

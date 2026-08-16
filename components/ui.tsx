@@ -9,6 +9,33 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+// Builds a wa.me deep-link that pre-fills a formatted appointment request
+// to the clinic's WhatsApp number, so booking-form submissions land there
+// directly instead of needing a backend.
+export interface BookingWhatsAppFields {
+  name: string;
+  phone: string;
+  email: string;
+  service: string;
+  date: string;
+  time: string;
+  message: string;
+}
+
+export function buildBookingWhatsAppLink(whatsapp: string, fields: BookingWhatsAppFields): string {
+  const lines = [
+    'New appointment request',
+    `Name: ${fields.name}`,
+    `Phone: ${fields.phone}`,
+    fields.email && `Email: ${fields.email}`,
+    fields.service && `Service: ${fields.service}`,
+    (fields.date || fields.time) && `Preferred: ${[fields.date, fields.time].filter(Boolean).join(' at ')}`,
+    fields.message && `Message: ${fields.message}`,
+  ].filter(Boolean).join('\n');
+
+  return `https://wa.me/${whatsapp}?text=${encodeURIComponent(lines)}`;
+}
+
 // --- Animations ---
 
 interface RevealProps {
