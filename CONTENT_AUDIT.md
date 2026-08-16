@@ -26,16 +26,16 @@ Every item below is already flagged `// PLACEHOLDER` in the source, but is re-fl
 
 ### 2. Credentials — `constants.tsx:24–34`
 
-- **Line 26** `"MD Dermatology, Venereology & Leprosy (Gold Medalist)"` — awarding institution is omitted. Add it.
-- **Line 27** `"MBBS, Osmania Medical College, Hyderabad"` — verify year and institution.
+- **Line 26** `"MD Dermatology"` — awarding institution is omitted. Add it.
+- **Line 27** `"MBBS, Hyderabad"` — verify year and institution.
 - **Line 31** IADVL Life Member — verify current standing and member number.
 - **Line 32** CDSI Member — verify.
-- **Line 33** `"Awarded Best Paper Presentation at DERMACON 2015"` — single sourced, year-dated claim. If unverifiable, remove. A false specific award is worse than no award.
+- **Line 33** `"Awarded Best Paper Presentation at DERMACON 2023"` — single sourced, year-dated claim. If unverifiable, remove. A false specific award is worse than no award.
 
 ### 3. Internal contradiction — awards count
 
 - `heroHighlight.value: "15+"`, label `"Awards"` (`constants.tsx:47–48`)
-- `memberships` list contains **one named award** (DERMACON 2015)
+- `memberships` list contains **one named award** (DERMACON 2023)
 
 The hero prominently displays "15+ Awards" while the list shows one. This is the site's most visible credibility problem. **Either document the other 14+, or reduce the claim to what is verifiable.**
 

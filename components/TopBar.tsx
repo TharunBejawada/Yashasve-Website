@@ -31,7 +31,7 @@ export const TopBar: React.FC = () => (
 
           <div className="flex items-center gap-2">
             <Clock size={12} className="text-primary-400" aria-hidden="true" />
-            <span>Mon – Sat: 10 AM – 9 PM</span>
+            <span>Mon – Sat: 4 PM – 10 PM</span>
           </div>
         </div>
 

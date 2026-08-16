@@ -30,7 +30,7 @@ export const Contact: React.FC<ContactProps> = ({ onNavigate: _onNavigate }) => 
               height="100%"
               className="absolute inset-0 w-full h-full grayscale-[20%] border-0"
               src={DOCTOR_PROFILE.mapLink}
-              title="Google Maps showing Suseela Hospital location in Kothapet, LB Nagar, Hyderabad"
+              title="Google Maps showing Suseela Hospital location in SRK Puram, Kothapet, LB Nagar, Hyderabad"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               sandbox="allow-scripts allow-same-origin"

@@ -10,27 +10,26 @@ export const DOCTOR_PROFILE: DoctorProfile = {
   regNumber: "TSMC-XXXXX", // PLACEHOLDER: Replace with real TSMC registration number
   bio: "Dr. Yashasve is a leading dermatologist known for his ethical, evidence-based approach to skin and hair care. With a focus on sustainable results, he specialises in treating chronic skin conditions and performing advanced aesthetic procedures with precision and safety.",
   hospital: "Suseela Hospital",
-  location: "Kothapet, LB Nagar, Hyderabad, Telangana",
+  location: "SRK Puram, Kothapet, LB Nagar, Hyderabad, Telangana",
   phone: "+91 81431 79457",
   whatsapp: "918143179457",
   email: "dryashasvedermatologist@gmail.com", // PLACEHOLDER: Replace with real email
-  mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.463376789!2d78.53!3d17.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae1!2sSuseela%20Hospital!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin", // PLACEHOLDER: Replace with real Google Maps embed URL
+  mapLink: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9144094098665!2d78.54698757516448!3d17.36785108351603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f0883dbd7%3A0x44ea390247e683f9!2sDr%20Yashasve%20Chemudupati%20%7C%20Dermatologist%20in%20Kothapet!5e0!3m2!1sen!2sin!4v1786858793235!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
   hours: [
-    "Mon - Sat: 10:00 AM - 01:00 PM",
-    "Mon - Sat: 05:00 PM - 09:00 PM",
+    "Mon - Sat: 04:00 PM - 10:00 PM",
     "Sunday: By Appointment Only",
   ],
   philosophy: "Dr. Yashasve advocates for a measured approach to dermatology — focusing on restoring skin health over time rather than aggressive quick fixes that damage the skin barrier. He specialises in acne scar revision and anti-aging treatments that respect the natural anatomy of the face.", // PLACEHOLDER: Verify this is Dr. Yashasve's actual philosophy
   education: [
     // PLACEHOLDER: Verify all dates and institutions with Dr. Yashasve
-    { year: "2016", description: "MD Dermatology, Venereology & Leprosy (Gold Medalist)" },
-    { year: "2013", description: "MBBS, Osmania Medical College, Hyderabad" },
+    { year: "2021", description: "MD Dermatology" },
+    { year: "2013", description: "MBBS, Hyderabad" },
   ],
   memberships: [
     // PLACEHOLDER: Verify current membership status
     "Life Member, Indian Association of Dermatologists, Venereologists and Leprologists (IADVL)",
     "Member, Cosmetic Dermatology Society of India (CDSI)",
-    "Awarded Best Paper Presentation at DERMACON 2015", // PLACEHOLDER: Verify this award
+    "Awarded Best Paper Presentation at DERMACON 2023", // PLACEHOLDER: Verify this award
   ],
   googleRating: {
     score: 4.9, // PLACEHOLDER: Use actual Google Business Profile rating
@@ -47,7 +46,7 @@ export const DOCTOR_PROFILE: DoctorProfile = {
     value: "15+", // PLACEHOLDER: Verify award count — bio lists only 1 specific award
     label: "Awards",
   },
-  established: "2016", // PLACEHOLDER: Verify when practice was established
+  established: "2022", // PLACEHOLDER: Verify when practice was established
 };
 
 export const SERVICES: Service[] = [
@@ -106,6 +105,151 @@ export const SERVICES: Service[] = [
         { question: "Will my pigmentation come back after treatment?", answer: "Melasma is a chronic condition with a tendency to recur, especially with sun exposure or hormonal changes. Maintenance treatments and diligent sun protection significantly reduce recurrence." },
         { question: "How long does treatment take?", answer: "A visible improvement is typically seen after 3-4 sessions over 6-8 weeks. Full results develop over 3-6 months. Maintenance is ongoing." },
         { question: "Is laser treatment safe for dark Indian skin?", answer: "When performed by an experienced dermatologist using appropriate laser settings and parameters for Indian skin types, laser toning is safe and effective. Incorrect settings can cause adverse effects, making specialist supervision essential." },
+      ],
+    },
+  },
+  {
+    id: 'skin-boosters',
+    title: 'Skin Boosters & Profhilo',
+    category: 'Skin',
+    shortDescription: 'Injectable hyaluronic acid that hydrates skin from within for a natural, dewy glow.',
+    fullDescription: 'Skin boosters and Profhilo are injectable treatments that deliver hyaluronic acid directly into the skin layers where it is needed most. Unlike dermal fillers (which add volume), these treatments focus on deep hydration, improved elasticity, and overall skin quality. The hyaluronic acid attracts and retains moisture at the cellular level, producing a natural luminosity and smoothness that topical products cannot replicate. Results are subtle, natural, and develop over 2-4 weeks.',
+    candidates: 'Patients with dehydrated, dull, or crepey skin seeking improved radiance and elasticity.',
+    procedure: 'Multiple micro-injections of hyaluronic acid across the treatment area. Takes 20-30 minutes.',
+    downtime: 'Minimal. Small injection marks for 24-48 hours. Mild swelling possible.',
+    iconName: 'Droplet',
+    detailedContent: {
+      overview: [
+        "As skin ages, it loses its natural reservoir of hyaluronic acid — the molecule responsible for retaining moisture and maintaining plumpness. While topical hyaluronic acid products provide surface-level hydration, they cannot penetrate deeply enough to replenish what has been lost at the dermal level.",
+        "Skin boosters solve this by delivering stabilised hyaluronic acid directly into the mid-dermis through a series of micro-injections. The injected hyaluronic acid integrates into the skin tissue, attracting water molecules and creating a sustained hydration effect from within. This improves skin texture, fine lines, and overall radiance.",
+        "Profhilo takes this concept further — it uses a patented formulation of highly concentrated hyaluronic acid (64mg in 2ml) that not only hydrates but also stimulates the production of collagen and elastin through a process called bio-remodelling. The result is firmer, more elastic skin with improved tone and texture. Profhilo requires just 5 injection points per side of the face (the BAP technique), making the procedure quick and efficient."
+      ],
+      howItWorks: "For skin boosters, multiple micro-injections are placed in a grid pattern across the treatment area (face, neck, hands, or decolletage). For Profhilo, the BAP (Bio Aesthetic Points) technique is used — 5 specific injection points per side of the face, chosen for optimal product distribution through the tissue. The hyaluronic acid then diffuses through the dermal layers over the following weeks, providing hydration and stimulating collagen/elastin production.",
+      benefits: ["Deep hydration at the cellular level", "Improved skin elasticity and firmness", "Natural, dewy glow without a 'done' look", "Fine line reduction through plumping effect", "Profhilo stimulates collagen and elastin production", "Can treat face, neck, hands, and decolletage"],
+      sideEffects: "Small injection marks (wheals) visible for 24-48 hours. Mild swelling and tenderness at injection sites. Rare bruising at injection points. The treatment uses hyaluronic acid — a substance naturally present in the body — so allergic reactions are extremely uncommon.",
+      sessionInfo: { duration: "20-30 minutes", sessions: "2-3 sessions for initial course", frequency: "1 month apart; maintenance every 6 months", resultsIn: "Gradual improvement over 2-4 weeks after each session" },
+      preCare: ["Avoid blood thinners (aspirin, fish oil) for 48 hours before", "Arrive with clean, makeup-free skin", "Inform the doctor of any allergies or previous filler treatments"],
+      postCare: ["Avoid touching or massaging the treated area for 6 hours", "No makeup for 12 hours", "Avoid intense heat (sauna, hot yoga) for 48 hours", "Stay hydrated — drink plenty of water to support the hyaluronic acid", "Small bumps at injection sites resolve within 24-48 hours"],
+      faqs: [
+        { question: "What is the difference between skin boosters and Profhilo?", answer: "Skin boosters deliver hyaluronic acid through multiple micro-injections in a grid pattern, primarily for hydration. Profhilo uses a higher concentration of hyaluronic acid delivered at just 10 points, and uniquely stimulates both collagen and elastin production (bio-remodelling), providing tightening alongside hydration." },
+        { question: "Will my face look puffy after?", answer: "No — skin boosters and Profhilo do not add volume like fillers. You may have small bumps at injection sites for 24-48 hours, but these flatten naturally. The result is improved skin quality, not a fuller or puffier appearance." },
+        { question: "How is this different from dermal fillers?", answer: "Dermal fillers add volume to specific areas (lips, cheeks, jawline). Skin boosters and Profhilo improve overall skin quality, hydration, and texture without adding volume. They serve completely different purposes and are often used together." },
+      ],
+    },
+  },
+  {
+    id: 'cosmelan-peel',
+    title: 'Cosmelan Peel',
+    category: 'Skin',
+    shortDescription: 'Professional depigmentation system for stubborn melasma and deep discolouration.',
+    fullDescription: 'Cosmelan is a medical-grade depigmentation programme that combines an in-clinic mask application with a structured homecare protocol. It works by inhibiting tyrosinase — the enzyme responsible for melanin production — at multiple levels simultaneously. This makes it effective for melasma, post-inflammatory hyperpigmentation, and solar lentigines that have not responded adequately to standard topical treatments. Outcomes are progressive and require patient compliance with the homecare phase.',
+    candidates: 'Patients with melasma, persistent hyperpigmentation, or deep discolouration resistant to other treatments.',
+    procedure: 'In-clinic mask applied for a specific duration, followed by a structured homecare regimen over several weeks.',
+    downtime: '3-7 days of redness and peeling after the initial mask. Homecare phase is ongoing.',
+    iconName: 'CircleDot',
+    detailedContent: {
+      overview: [
+        "Melasma is among the most challenging pigmentation conditions to treat, particularly in Indian skin types where it is prevalent. Hormonal factors, sun exposure, and genetic predisposition drive melanin overproduction in specific facial zones — typically the cheeks, forehead, upper lip, and nose bridge.",
+        "The Cosmelan programme addresses this through a dual-phase approach. The first phase involves a professional depigmentation mask applied in-clinic, which delivers a concentrated blend of active depigmenting agents directly to the skin. The second phase is a structured homecare protocol using Cosmelan 2 cream, which maintains and builds upon the results achieved by the in-clinic mask.",
+        "Unlike single-session treatments, Cosmelan works through sustained tyrosinase inhibition over weeks and months. Patient compliance with the homecare routine is essential — results correlate directly with how consistently the protocol is followed. Sun protection is absolutely non-negotiable throughout the entire treatment period."
+      ],
+      howItWorks: "During the in-clinic session, the Cosmelan 1 mask is applied as a thick layer over the affected areas. It remains on the skin for a duration determined by the doctor (typically 8-12 hours), after which the patient removes it at home. Over the following days, controlled peeling occurs. The homecare phase begins with Cosmelan 2 cream applied according to a specific schedule that tapers in intensity over several months. The active ingredients continuously suppress melanin production while the skin renews.",
+      benefits: ["Addresses melasma at the enzymatic level", "Effective on deep and persistent pigmentation", "Structured protocol reduces guesswork", "Visible improvement within 2-4 weeks", "Can treat multiple pigmentation types simultaneously", "Long-lasting results with proper maintenance"],
+      sideEffects: "Significant redness, tightness, and peeling for 3-7 days after the initial mask — this is expected and part of the treatment. Temporary skin sensitivity and dryness during the homecare phase. Strict sun avoidance is critical — UV exposure during treatment can worsen pigmentation. Not suitable during pregnancy or breastfeeding.",
+      sessionInfo: { duration: "30 minutes (in-clinic)", sessions: "1 in-clinic + months of homecare", frequency: "Single programme", resultsIn: "2-4 weeks for initial improvement; full results over 3-6 months" },
+      preCare: ["Consultation and skin assessment are mandatory before starting", "Pre-conditioning with specific products may be recommended for 2 weeks", "Discontinue all exfoliating agents", "Plan the treatment around your schedule — the peeling phase lasts several days"],
+      postCare: ["Follow the Cosmelan 2 homecare protocol exactly as prescribed", "Apply SPF 50+ sunscreen every 2-3 hours without exception", "Avoid hot water, saunas, and intense exercise for 1 week", "Use only the recommended cleanser and moisturiser during recovery", "Do not pick or peel flaking skin"],
+      faqs: [
+        { question: "Is Cosmelan safe for Indian skin?", answer: "Yes — the Cosmelan system is widely used on Fitzpatrick skin types IV-V and has a strong track record in treating melasma in Indian patients. Proper application technique and strict sun protection are essential for safety." },
+        { question: "How is this different from regular chemical peels?", answer: "Chemical peels primarily exfoliate the surface. Cosmelan works deeper by inhibiting the enzyme that produces melanin, addressing the root cause of pigmentation rather than just the visible layer." },
+        { question: "Will my melasma come back?", answer: "Melasma is a chronic condition. Results can be maintained long-term with diligent sun protection, maintenance products, and periodic touch-up treatments. Without sun care, recurrence is likely." },
+      ],
+    },
+  },
+  {
+    id: 'chemical-peel',
+    title: 'Chemical Peel Therapy',
+    category: 'Skin',
+    shortDescription: 'Controlled exfoliation using medical-grade acids to renew skin texture and tone.',
+    fullDescription: 'Chemical peels apply a carefully selected acid solution to the skin surface, triggering controlled shedding of the outermost layers. As new skin regenerates, texture irregularities, mild scarring, fine lines, and pigmentation are visibly reduced. The depth and type of peel are chosen based on the patient\'s specific concern and skin type. Results build progressively over a course of sessions.',
+    candidates: 'Patients with dull skin, superficial scars, fine lines, or uneven pigmentation.',
+    procedure: 'Acid solution applied for a calibrated duration, then neutralised. Takes 15-20 minutes.',
+    downtime: 'Mild flaking for 2-5 days depending on peel depth.',
+    iconName: 'FlaskConical',
+    detailedContent: {
+      overview: [
+        "Chemical peels are among the most versatile tools in a dermatologist's arsenal. By applying a specific acid at a controlled concentration and pH, the outer skin layers are encouraged to shed in a predictable manner. The fresh skin that emerges is typically smoother, more uniform in tone, and less marked by superficial damage.",
+        "Peels range from superficial (glycolic, lactic, mandelic acids) to medium-depth (trichloroacetic acid) to deep formulations. For most patients, a series of superficial or medium peels delivers the best balance of results and minimal downtime. Dr. Yashasve selects the peel type, concentration, and duration based on a thorough assessment of your skin type, condition, and goals.",
+        "Chemical peels are particularly effective in the Indian climate, where sun damage, post-inflammatory marks, and melasma are widespread concerns. When combined with a targeted homecare regimen, they can deliver significant improvement over 4-6 sessions."
+      ],
+      howItWorks: "The skin is cleansed and degreased to ensure even absorption. The selected acid solution is applied in controlled layers and left for a precise duration — anywhere from 1 to 10 minutes depending on the peel type and skin tolerance. A mild stinging or warmth is normal. The solution is then neutralised (for certain peels) or allowed to self-neutralise. Over the following 2-5 days, the treated skin sheds naturally, revealing fresher skin beneath.",
+      benefits: ["Improves overall skin texture and smoothness", "Reduces superficial acne scars and post-inflammatory marks", "Addresses fine lines and early signs of ageing", "Helps manage active acne by unclogging pores", "Enhances absorption of topical products", "Multiple peel options tailored to different concerns"],
+      sideEffects: "Mild stinging during application (resolves in minutes). Redness and tightness for 1-2 days. Flaking and peeling for 2-5 days — this is the intended effect and should not be forced. Temporary sun sensitivity for 1-2 weeks. Darker skin types require careful peel selection to avoid post-inflammatory hyperpigmentation.",
+      sessionInfo: { duration: "15-20 minutes", sessions: "4-6 sessions typical", frequency: "Every 2-4 weeks", resultsIn: "Progressive improvement over the course" },
+      preCare: ["Discontinue retinoids 5-7 days before", "Avoid waxing, threading, or scrubbing the treatment area for 48 hours", "Start a mild sunscreen regimen at least 1 week before", "Inform the doctor of any recent facial treatments or allergic reactions"],
+      postCare: ["Do not peel, scratch, or exfoliate flaking skin", "Apply a gentle, fragrance-free moisturiser liberally", "Strict sunscreen use (SPF 30+) for at least 2 weeks", "Avoid swimming pools, saunas, and steam for 48 hours", "Follow the prescribed post-peel skincare routine"],
+      faqs: [
+        { question: "Which type of chemical peel is right for me?", answer: "This depends on your skin type, concern, and tolerance. Superficial peels (glycolic, lactic) suit most patients. Medium peels are reserved for deeper concerns. Dr. Yashasve assesses and recommends the appropriate type during consultation." },
+        { question: "Is peeling visible after the treatment?", answer: "Mild flaking is common 2-5 days after medium peels. Superficial peels may cause only a slight dryness. The peeling is generally subtle and manageable with moisturiser." },
+        { question: "Can chemical peels treat acne?", answer: "Yes — salicylic acid peels are specifically designed for acne-prone skin. They unclog pores, reduce oiliness, and help clear active breakouts when used in a series." },
+      ],
+    },
+  },
+  {
+    id: 'laser-toning',
+    title: 'Laser Toning',
+    category: 'Skin',
+    shortDescription: 'Gentle laser sessions that gradually reduce tan, pigmentation, and open pores.',
+    fullDescription: 'Laser toning uses low-fluence laser passes delivered at specific wavelengths to break down excess melanin deposits without damaging the surrounding skin. Over a series of sessions, uneven tone, solar tan, and patchy discolouration are visibly reduced. The treatment also has a mild pore-tightening effect due to collagen stimulation. Individual results depend on the depth and type of pigmentation.',
+    candidates: 'Patients with sun tan, uneven skin tone, post-inflammatory marks, or open pores.',
+    procedure: 'Multiple low-energy laser passes across the treatment area. Mild warmth is felt during the session.',
+    downtime: 'None to minimal. Mild redness for a few hours is common.',
+    iconName: 'Sun',
+    detailedContent: {
+      overview: [
+        "Laser toning is a non-ablative approach to pigmentation management — meaning it works beneath the skin surface without removing or wounding the outer layer. This makes it significantly gentler than ablative laser treatments, with virtually no downtime.",
+        "The Q-switched Nd:YAG laser delivers energy at a low fluence (power level) across the skin in rapid passes. This energy selectively fragments melanin pigment clusters into smaller particles that the body's immune system can gradually clear. Over multiple sessions, the overall tone becomes more uniform.",
+        "In Hyderabad's climate, where UV exposure is high year-round, laser toning is a practical option for maintaining clear, even-toned skin. It pairs well with a disciplined sunscreen regimen and may be combined with topical lightening agents for enhanced results."
+      ],
+      howItWorks: "The treated area is cleansed and a cooling gel may be applied. The laser handpiece delivers rapid, low-energy pulses across the skin in overlapping passes. Each session covers the entire area — face, neck, or hands — uniformly. The melanin absorbs the laser energy and breaks into smaller fragments that are cleared by macrophages (immune cells) over the following days. Sessions are spaced to allow this clearance process between treatments.",
+      benefits: ["Gradual, natural-looking reduction in pigmentation", "No wounds or peeling — non-ablative approach", "Mild pore-tightening effect", "Can treat face, neck, hands, and other areas", "Works on both sun-induced and hormonal pigmentation", "Safe for Indian skin types when performed correctly"],
+      sideEffects: "Mild warmth and temporary pinkness for 2-4 hours. Very rarely, transient darkening of treated pigment (which resolves). Improper technique on darker skin tones can cause paradoxical hyperpigmentation — this is why practitioner expertise matters. Always insist on treatment by a trained dermatologist.",
+      sessionInfo: { duration: "20-30 minutes", sessions: "6-10 sessions typical", frequency: "Every 1-2 weeks", resultsIn: "Visible improvement from session 3-4" },
+      preCare: ["Apply sunscreen diligently for at least 1 week before starting", "Discontinue retinoids 5 days before", "Avoid waxing or threading the treatment area for 48 hours"],
+      postCare: ["Sunscreen (SPF 30+) is mandatory — reapply every 3 hours outdoors", "Avoid direct sun for 48 hours", "Use a calming moisturiser if mild redness occurs", "Continue prescribed topical regimen between sessions"],
+      faqs: [
+        { question: "Is laser toning safe for dark skin?", answer: "When performed by an experienced dermatologist using appropriate settings, laser toning is safe for Indian skin types (Fitzpatrick IV-V). Incorrect settings can cause side effects, which is why specialist supervision is essential." },
+        { question: "Will my pigmentation come back?", answer: "Melasma and hormonal pigmentation are chronic conditions — they can recur with sun exposure or hormonal changes. Maintenance sessions and strict sun protection help sustain results." },
+        { question: "Can I combine this with other treatments?", answer: "Laser toning pairs well with chemical peels, topical depigmenting agents, and antioxidant serums. Dr. Yashasve will advise on the optimal combination for your specific pigmentation type." },
+      ],
+    },
+  },
+  {
+    id: 'mesotherapy-hair',
+    title: 'Scalp Mesotherapy',
+    category: 'Hair',
+    shortDescription: 'Micro-injections of vitamins and growth agents directly into the scalp to support hair health.',
+    fullDescription: 'Scalp mesotherapy involves injecting a customised cocktail of vitamins, minerals, amino acids, and growth-promoting agents directly into the scalp at the level of the hair follicles. This targeted delivery ensures the active ingredients reach the follicles in higher concentrations than topical products can achieve. The treatment aims to improve blood circulation, nourish weakened follicles, and support the hair growth cycle. Results are gradual and depend on the underlying cause of hair thinning.',
+    candidates: 'Patients with early-stage hair thinning, diffuse hair loss, or weakened hair quality.',
+    procedure: 'Multiple superficial injections across the scalp using a fine needle or meso-gun. Takes 20-30 minutes.',
+    downtime: 'None. Mild scalp tenderness for a few hours.',
+    iconName: 'Activity',
+    detailedContent: {
+      overview: [
+        "Hair thinning often begins with a reduction in the nutrients and blood supply reaching the hair follicles. While oral supplements and topical solutions provide some support, their delivery to the follicle level is limited by absorption barriers.",
+        "Scalp mesotherapy bypasses these barriers by injecting a customised blend of active ingredients — including biotin, dexpanthenol, zinc, minoxidil, and growth peptides — directly into the mid-dermal layer of the scalp. This ensures that the follicles receive therapeutic concentrations of nutrients precisely where they are needed.",
+        "The treatment is particularly effective in the early stages of hair thinning, where follicles are weakened but still active. For advanced hair loss, mesotherapy may be combined with PRP/GFC therapy for a more comprehensive approach. Results are cumulative and become noticeable after 4-6 sessions."
+      ],
+      howItWorks: "The scalp is cleansed and a customised cocktail is prepared based on your specific hair concern. Using either a fine needle or an automated meso-gun, the solution is injected in a grid pattern across the affected areas of the scalp. The injections are superficial — reaching the dermal layer where follicle roots reside. Each session covers the entire thinning area and takes 20-30 minutes. The active ingredients nourish the follicles, improve local blood circulation, and support the transition of resting follicles into the active growth phase.",
+      benefits: ["Direct nutrient delivery to hair follicles", "Customisable cocktail for individual needs", "Improves scalp blood circulation", "Strengthens existing hair strands", "Can slow progression of early-stage thinning", "Complements other hair restoration treatments"],
+      sideEffects: "Mild scalp tenderness and small bumps at injection sites for a few hours. Occasional headache on the day of treatment. Very rare: localised allergic reaction to specific ingredients. The procedure is generally well-tolerated.",
+      sessionInfo: { duration: "20-30 minutes", sessions: "8-12 sessions for initial course", frequency: "Weekly or fortnightly", resultsIn: "Visible improvement after 4-6 sessions" },
+      preCare: ["Wash hair with a gentle shampoo on the day of treatment", "Avoid applying any styling products before the session", "Inform the doctor of any scalp conditions or allergies"],
+      postCare: ["Do not wash hair for 6-8 hours after treatment", "Avoid swimming pools and saunas for 48 hours", "A mild shampoo without SLS is recommended for the first week", "Continue prescribed oral supplements alongside the treatment"],
+      faqs: [
+        { question: "Is mesotherapy different from PRP/GFC?", answer: "PRP/GFC uses your own blood-derived growth factors. Mesotherapy uses a customised cocktail of vitamins, minerals, and pharmaceutical agents. Both target the follicle level but through different mechanisms. They are often used in combination for enhanced results." },
+        { question: "Does it hurt?", answer: "The needles used are very fine. Most patients describe a mild prickling sensation. The automated meso-gun further reduces discomfort by delivering rapid, shallow injections. Topical numbing can be applied for sensitive individuals." },
+        { question: "Can mesotherapy regrow completely lost hair?", answer: "Mesotherapy works best on weakened but still-active follicles. It cannot revive follicles that have been dormant for years or permanently scarred. Early intervention produces the best outcomes." },
       ],
     },
   },
@@ -295,64 +439,6 @@ export const SERVICES: Service[] = [
     },
   },
   {
-    id: 'laser-toning',
-    title: 'Laser Toning',
-    category: 'Skin',
-    shortDescription: 'Gentle laser sessions that gradually reduce tan, pigmentation, and open pores.',
-    fullDescription: 'Laser toning uses low-fluence laser passes delivered at specific wavelengths to break down excess melanin deposits without damaging the surrounding skin. Over a series of sessions, uneven tone, solar tan, and patchy discolouration are visibly reduced. The treatment also has a mild pore-tightening effect due to collagen stimulation. Individual results depend on the depth and type of pigmentation.',
-    candidates: 'Patients with sun tan, uneven skin tone, post-inflammatory marks, or open pores.',
-    procedure: 'Multiple low-energy laser passes across the treatment area. Mild warmth is felt during the session.',
-    downtime: 'None to minimal. Mild redness for a few hours is common.',
-    iconName: 'Sun',
-    detailedContent: {
-      overview: [
-        "Laser toning is a non-ablative approach to pigmentation management — meaning it works beneath the skin surface without removing or wounding the outer layer. This makes it significantly gentler than ablative laser treatments, with virtually no downtime.",
-        "The Q-switched Nd:YAG laser delivers energy at a low fluence (power level) across the skin in rapid passes. This energy selectively fragments melanin pigment clusters into smaller particles that the body's immune system can gradually clear. Over multiple sessions, the overall tone becomes more uniform.",
-        "In Hyderabad's climate, where UV exposure is high year-round, laser toning is a practical option for maintaining clear, even-toned skin. It pairs well with a disciplined sunscreen regimen and may be combined with topical lightening agents for enhanced results."
-      ],
-      howItWorks: "The treated area is cleansed and a cooling gel may be applied. The laser handpiece delivers rapid, low-energy pulses across the skin in overlapping passes. Each session covers the entire area — face, neck, or hands — uniformly. The melanin absorbs the laser energy and breaks into smaller fragments that are cleared by macrophages (immune cells) over the following days. Sessions are spaced to allow this clearance process between treatments.",
-      benefits: ["Gradual, natural-looking reduction in pigmentation", "No wounds or peeling — non-ablative approach", "Mild pore-tightening effect", "Can treat face, neck, hands, and other areas", "Works on both sun-induced and hormonal pigmentation", "Safe for Indian skin types when performed correctly"],
-      sideEffects: "Mild warmth and temporary pinkness for 2-4 hours. Very rarely, transient darkening of treated pigment (which resolves). Improper technique on darker skin tones can cause paradoxical hyperpigmentation — this is why practitioner expertise matters. Always insist on treatment by a trained dermatologist.",
-      sessionInfo: { duration: "20-30 minutes", sessions: "6-10 sessions typical", frequency: "Every 1-2 weeks", resultsIn: "Visible improvement from session 3-4" },
-      preCare: ["Apply sunscreen diligently for at least 1 week before starting", "Discontinue retinoids 5 days before", "Avoid waxing or threading the treatment area for 48 hours"],
-      postCare: ["Sunscreen (SPF 30+) is mandatory — reapply every 3 hours outdoors", "Avoid direct sun for 48 hours", "Use a calming moisturiser if mild redness occurs", "Continue prescribed topical regimen between sessions"],
-      faqs: [
-        { question: "Is laser toning safe for dark skin?", answer: "When performed by an experienced dermatologist using appropriate settings, laser toning is safe for Indian skin types (Fitzpatrick IV-V). Incorrect settings can cause side effects, which is why specialist supervision is essential." },
-        { question: "Will my pigmentation come back?", answer: "Melasma and hormonal pigmentation are chronic conditions — they can recur with sun exposure or hormonal changes. Maintenance sessions and strict sun protection help sustain results." },
-        { question: "Can I combine this with other treatments?", answer: "Laser toning pairs well with chemical peels, topical depigmenting agents, and antioxidant serums. Dr. Yashasve will advise on the optimal combination for your specific pigmentation type." },
-      ],
-    },
-  },
-  {
-    id: 'chemical-peel',
-    title: 'Chemical Peel Therapy',
-    category: 'Skin',
-    shortDescription: 'Controlled exfoliation using medical-grade acids to renew skin texture and tone.',
-    fullDescription: 'Chemical peels apply a carefully selected acid solution to the skin surface, triggering controlled shedding of the outermost layers. As new skin regenerates, texture irregularities, mild scarring, fine lines, and pigmentation are visibly reduced. The depth and type of peel are chosen based on the patient\'s specific concern and skin type. Results build progressively over a course of sessions.',
-    candidates: 'Patients with dull skin, superficial scars, fine lines, or uneven pigmentation.',
-    procedure: 'Acid solution applied for a calibrated duration, then neutralised. Takes 15-20 minutes.',
-    downtime: 'Mild flaking for 2-5 days depending on peel depth.',
-    iconName: 'FlaskConical',
-    detailedContent: {
-      overview: [
-        "Chemical peels are among the most versatile tools in a dermatologist's arsenal. By applying a specific acid at a controlled concentration and pH, the outer skin layers are encouraged to shed in a predictable manner. The fresh skin that emerges is typically smoother, more uniform in tone, and less marked by superficial damage.",
-        "Peels range from superficial (glycolic, lactic, mandelic acids) to medium-depth (trichloroacetic acid) to deep formulations. For most patients, a series of superficial or medium peels delivers the best balance of results and minimal downtime. Dr. Yashasve selects the peel type, concentration, and duration based on a thorough assessment of your skin type, condition, and goals.",
-        "Chemical peels are particularly effective in the Indian climate, where sun damage, post-inflammatory marks, and melasma are widespread concerns. When combined with a targeted homecare regimen, they can deliver significant improvement over 4-6 sessions."
-      ],
-      howItWorks: "The skin is cleansed and degreased to ensure even absorption. The selected acid solution is applied in controlled layers and left for a precise duration — anywhere from 1 to 10 minutes depending on the peel type and skin tolerance. A mild stinging or warmth is normal. The solution is then neutralised (for certain peels) or allowed to self-neutralise. Over the following 2-5 days, the treated skin sheds naturally, revealing fresher skin beneath.",
-      benefits: ["Improves overall skin texture and smoothness", "Reduces superficial acne scars and post-inflammatory marks", "Addresses fine lines and early signs of ageing", "Helps manage active acne by unclogging pores", "Enhances absorption of topical products", "Multiple peel options tailored to different concerns"],
-      sideEffects: "Mild stinging during application (resolves in minutes). Redness and tightness for 1-2 days. Flaking and peeling for 2-5 days — this is the intended effect and should not be forced. Temporary sun sensitivity for 1-2 weeks. Darker skin types require careful peel selection to avoid post-inflammatory hyperpigmentation.",
-      sessionInfo: { duration: "15-20 minutes", sessions: "4-6 sessions typical", frequency: "Every 2-4 weeks", resultsIn: "Progressive improvement over the course" },
-      preCare: ["Discontinue retinoids 5-7 days before", "Avoid waxing, threading, or scrubbing the treatment area for 48 hours", "Start a mild sunscreen regimen at least 1 week before", "Inform the doctor of any recent facial treatments or allergic reactions"],
-      postCare: ["Do not peel, scratch, or exfoliate flaking skin", "Apply a gentle, fragrance-free moisturiser liberally", "Strict sunscreen use (SPF 30+) for at least 2 weeks", "Avoid swimming pools, saunas, and steam for 48 hours", "Follow the prescribed post-peel skincare routine"],
-      faqs: [
-        { question: "Which type of chemical peel is right for me?", answer: "This depends on your skin type, concern, and tolerance. Superficial peels (glycolic, lactic) suit most patients. Medium peels are reserved for deeper concerns. Dr. Yashasve assesses and recommends the appropriate type during consultation." },
-        { question: "Is peeling visible after the treatment?", answer: "Mild flaking is common 2-5 days after medium peels. Superficial peels may cause only a slight dryness. The peeling is generally subtle and manageable with moisturiser." },
-        { question: "Can chemical peels treat acne?", answer: "Yes — salicylic acid peels are specifically designed for acne-prone skin. They unclog pores, reduce oiliness, and help clear active breakouts when used in a series." },
-      ],
-    },
-  },
-  {
     id: 'hifu',
     title: 'HIFU — Skin Tightening',
     category: 'Skin',
@@ -381,35 +467,7 @@ export const SERVICES: Service[] = [
       ],
     },
   },
-  {
-    id: 'cosmelan-peel',
-    title: 'Cosmelan Peel',
-    category: 'Skin',
-    shortDescription: 'Professional depigmentation system for stubborn melasma and deep discolouration.',
-    fullDescription: 'Cosmelan is a medical-grade depigmentation programme that combines an in-clinic mask application with a structured homecare protocol. It works by inhibiting tyrosinase — the enzyme responsible for melanin production — at multiple levels simultaneously. This makes it effective for melasma, post-inflammatory hyperpigmentation, and solar lentigines that have not responded adequately to standard topical treatments. Outcomes are progressive and require patient compliance with the homecare phase.',
-    candidates: 'Patients with melasma, persistent hyperpigmentation, or deep discolouration resistant to other treatments.',
-    procedure: 'In-clinic mask applied for a specific duration, followed by a structured homecare regimen over several weeks.',
-    downtime: '3-7 days of redness and peeling after the initial mask. Homecare phase is ongoing.',
-    iconName: 'CircleDot',
-    detailedContent: {
-      overview: [
-        "Melasma is among the most challenging pigmentation conditions to treat, particularly in Indian skin types where it is prevalent. Hormonal factors, sun exposure, and genetic predisposition drive melanin overproduction in specific facial zones — typically the cheeks, forehead, upper lip, and nose bridge.",
-        "The Cosmelan programme addresses this through a dual-phase approach. The first phase involves a professional depigmentation mask applied in-clinic, which delivers a concentrated blend of active depigmenting agents directly to the skin. The second phase is a structured homecare protocol using Cosmelan 2 cream, which maintains and builds upon the results achieved by the in-clinic mask.",
-        "Unlike single-session treatments, Cosmelan works through sustained tyrosinase inhibition over weeks and months. Patient compliance with the homecare routine is essential — results correlate directly with how consistently the protocol is followed. Sun protection is absolutely non-negotiable throughout the entire treatment period."
-      ],
-      howItWorks: "During the in-clinic session, the Cosmelan 1 mask is applied as a thick layer over the affected areas. It remains on the skin for a duration determined by the doctor (typically 8-12 hours), after which the patient removes it at home. Over the following days, controlled peeling occurs. The homecare phase begins with Cosmelan 2 cream applied according to a specific schedule that tapers in intensity over several months. The active ingredients continuously suppress melanin production while the skin renews.",
-      benefits: ["Addresses melasma at the enzymatic level", "Effective on deep and persistent pigmentation", "Structured protocol reduces guesswork", "Visible improvement within 2-4 weeks", "Can treat multiple pigmentation types simultaneously", "Long-lasting results with proper maintenance"],
-      sideEffects: "Significant redness, tightness, and peeling for 3-7 days after the initial mask — this is expected and part of the treatment. Temporary skin sensitivity and dryness during the homecare phase. Strict sun avoidance is critical — UV exposure during treatment can worsen pigmentation. Not suitable during pregnancy or breastfeeding.",
-      sessionInfo: { duration: "30 minutes (in-clinic)", sessions: "1 in-clinic + months of homecare", frequency: "Single programme", resultsIn: "2-4 weeks for initial improvement; full results over 3-6 months" },
-      preCare: ["Consultation and skin assessment are mandatory before starting", "Pre-conditioning with specific products may be recommended for 2 weeks", "Discontinue all exfoliating agents", "Plan the treatment around your schedule — the peeling phase lasts several days"],
-      postCare: ["Follow the Cosmelan 2 homecare protocol exactly as prescribed", "Apply SPF 50+ sunscreen every 2-3 hours without exception", "Avoid hot water, saunas, and intense exercise for 1 week", "Use only the recommended cleanser and moisturiser during recovery", "Do not pick or peel flaking skin"],
-      faqs: [
-        { question: "Is Cosmelan safe for Indian skin?", answer: "Yes — the Cosmelan system is widely used on Fitzpatrick skin types IV-V and has a strong track record in treating melasma in Indian patients. Proper application technique and strict sun protection are essential for safety." },
-        { question: "How is this different from regular chemical peels?", answer: "Chemical peels primarily exfoliate the surface. Cosmelan works deeper by inhibiting the enzyme that produces melanin, addressing the root cause of pigmentation rather than just the visible layer." },
-        { question: "Will my melasma come back?", answer: "Melasma is a chronic condition. Results can be maintained long-term with diligent sun protection, maintenance products, and periodic touch-up treatments. Without sun care, recurrence is likely." },
-      ],
-    },
-  },
+  
   {
     id: 'vampire-facial',
     title: 'Vampire Facial (PRP)',
@@ -439,66 +497,9 @@ export const SERVICES: Service[] = [
       ],
     },
   },
-  {
-    id: 'skin-boosters',
-    title: 'Skin Boosters & Profhilo',
-    category: 'Skin',
-    shortDescription: 'Injectable hyaluronic acid that hydrates skin from within for a natural, dewy glow.',
-    fullDescription: 'Skin boosters and Profhilo are injectable treatments that deliver hyaluronic acid directly into the skin layers where it is needed most. Unlike dermal fillers (which add volume), these treatments focus on deep hydration, improved elasticity, and overall skin quality. The hyaluronic acid attracts and retains moisture at the cellular level, producing a natural luminosity and smoothness that topical products cannot replicate. Results are subtle, natural, and develop over 2-4 weeks.',
-    candidates: 'Patients with dehydrated, dull, or crepey skin seeking improved radiance and elasticity.',
-    procedure: 'Multiple micro-injections of hyaluronic acid across the treatment area. Takes 20-30 minutes.',
-    downtime: 'Minimal. Small injection marks for 24-48 hours. Mild swelling possible.',
-    iconName: 'Droplet',
-    detailedContent: {
-      overview: [
-        "As skin ages, it loses its natural reservoir of hyaluronic acid — the molecule responsible for retaining moisture and maintaining plumpness. While topical hyaluronic acid products provide surface-level hydration, they cannot penetrate deeply enough to replenish what has been lost at the dermal level.",
-        "Skin boosters solve this by delivering stabilised hyaluronic acid directly into the mid-dermis through a series of micro-injections. The injected hyaluronic acid integrates into the skin tissue, attracting water molecules and creating a sustained hydration effect from within. This improves skin texture, fine lines, and overall radiance.",
-        "Profhilo takes this concept further — it uses a patented formulation of highly concentrated hyaluronic acid (64mg in 2ml) that not only hydrates but also stimulates the production of collagen and elastin through a process called bio-remodelling. The result is firmer, more elastic skin with improved tone and texture. Profhilo requires just 5 injection points per side of the face (the BAP technique), making the procedure quick and efficient."
-      ],
-      howItWorks: "For skin boosters, multiple micro-injections are placed in a grid pattern across the treatment area (face, neck, hands, or decolletage). For Profhilo, the BAP (Bio Aesthetic Points) technique is used — 5 specific injection points per side of the face, chosen for optimal product distribution through the tissue. The hyaluronic acid then diffuses through the dermal layers over the following weeks, providing hydration and stimulating collagen/elastin production.",
-      benefits: ["Deep hydration at the cellular level", "Improved skin elasticity and firmness", "Natural, dewy glow without a 'done' look", "Fine line reduction through plumping effect", "Profhilo stimulates collagen and elastin production", "Can treat face, neck, hands, and decolletage"],
-      sideEffects: "Small injection marks (wheals) visible for 24-48 hours. Mild swelling and tenderness at injection sites. Rare bruising at injection points. The treatment uses hyaluronic acid — a substance naturally present in the body — so allergic reactions are extremely uncommon.",
-      sessionInfo: { duration: "20-30 minutes", sessions: "2-3 sessions for initial course", frequency: "1 month apart; maintenance every 6 months", resultsIn: "Gradual improvement over 2-4 weeks after each session" },
-      preCare: ["Avoid blood thinners (aspirin, fish oil) for 48 hours before", "Arrive with clean, makeup-free skin", "Inform the doctor of any allergies or previous filler treatments"],
-      postCare: ["Avoid touching or massaging the treated area for 6 hours", "No makeup for 12 hours", "Avoid intense heat (sauna, hot yoga) for 48 hours", "Stay hydrated — drink plenty of water to support the hyaluronic acid", "Small bumps at injection sites resolve within 24-48 hours"],
-      faqs: [
-        { question: "What is the difference between skin boosters and Profhilo?", answer: "Skin boosters deliver hyaluronic acid through multiple micro-injections in a grid pattern, primarily for hydration. Profhilo uses a higher concentration of hyaluronic acid delivered at just 10 points, and uniquely stimulates both collagen and elastin production (bio-remodelling), providing tightening alongside hydration." },
-        { question: "Will my face look puffy after?", answer: "No — skin boosters and Profhilo do not add volume like fillers. You may have small bumps at injection sites for 24-48 hours, but these flatten naturally. The result is improved skin quality, not a fuller or puffier appearance." },
-        { question: "How is this different from dermal fillers?", answer: "Dermal fillers add volume to specific areas (lips, cheeks, jawline). Skin boosters and Profhilo improve overall skin quality, hydration, and texture without adding volume. They serve completely different purposes and are often used together." },
-      ],
-    },
-  },
+  
 
   // ===== NEW SERVICES — Hair Category =====
-  {
-    id: 'mesotherapy-hair',
-    title: 'Scalp Mesotherapy',
-    category: 'Hair',
-    shortDescription: 'Micro-injections of vitamins and growth agents directly into the scalp to support hair health.',
-    fullDescription: 'Scalp mesotherapy involves injecting a customised cocktail of vitamins, minerals, amino acids, and growth-promoting agents directly into the scalp at the level of the hair follicles. This targeted delivery ensures the active ingredients reach the follicles in higher concentrations than topical products can achieve. The treatment aims to improve blood circulation, nourish weakened follicles, and support the hair growth cycle. Results are gradual and depend on the underlying cause of hair thinning.',
-    candidates: 'Patients with early-stage hair thinning, diffuse hair loss, or weakened hair quality.',
-    procedure: 'Multiple superficial injections across the scalp using a fine needle or meso-gun. Takes 20-30 minutes.',
-    downtime: 'None. Mild scalp tenderness for a few hours.',
-    iconName: 'Activity',
-    detailedContent: {
-      overview: [
-        "Hair thinning often begins with a reduction in the nutrients and blood supply reaching the hair follicles. While oral supplements and topical solutions provide some support, their delivery to the follicle level is limited by absorption barriers.",
-        "Scalp mesotherapy bypasses these barriers by injecting a customised blend of active ingredients — including biotin, dexpanthenol, zinc, minoxidil, and growth peptides — directly into the mid-dermal layer of the scalp. This ensures that the follicles receive therapeutic concentrations of nutrients precisely where they are needed.",
-        "The treatment is particularly effective in the early stages of hair thinning, where follicles are weakened but still active. For advanced hair loss, mesotherapy may be combined with PRP/GFC therapy for a more comprehensive approach. Results are cumulative and become noticeable after 4-6 sessions."
-      ],
-      howItWorks: "The scalp is cleansed and a customised cocktail is prepared based on your specific hair concern. Using either a fine needle or an automated meso-gun, the solution is injected in a grid pattern across the affected areas of the scalp. The injections are superficial — reaching the dermal layer where follicle roots reside. Each session covers the entire thinning area and takes 20-30 minutes. The active ingredients nourish the follicles, improve local blood circulation, and support the transition of resting follicles into the active growth phase.",
-      benefits: ["Direct nutrient delivery to hair follicles", "Customisable cocktail for individual needs", "Improves scalp blood circulation", "Strengthens existing hair strands", "Can slow progression of early-stage thinning", "Complements other hair restoration treatments"],
-      sideEffects: "Mild scalp tenderness and small bumps at injection sites for a few hours. Occasional headache on the day of treatment. Very rare: localised allergic reaction to specific ingredients. The procedure is generally well-tolerated.",
-      sessionInfo: { duration: "20-30 minutes", sessions: "8-12 sessions for initial course", frequency: "Weekly or fortnightly", resultsIn: "Visible improvement after 4-6 sessions" },
-      preCare: ["Wash hair with a gentle shampoo on the day of treatment", "Avoid applying any styling products before the session", "Inform the doctor of any scalp conditions or allergies"],
-      postCare: ["Do not wash hair for 6-8 hours after treatment", "Avoid swimming pools and saunas for 48 hours", "A mild shampoo without SLS is recommended for the first week", "Continue prescribed oral supplements alongside the treatment"],
-      faqs: [
-        { question: "Is mesotherapy different from PRP/GFC?", answer: "PRP/GFC uses your own blood-derived growth factors. Mesotherapy uses a customised cocktail of vitamins, minerals, and pharmaceutical agents. Both target the follicle level but through different mechanisms. They are often used in combination for enhanced results." },
-        { question: "Does it hurt?", answer: "The needles used are very fine. Most patients describe a mild prickling sensation. The automated meso-gun further reduces discomfort by delivering rapid, shallow injections. Topical numbing can be applied for sensitive individuals." },
-        { question: "Can mesotherapy regrow completely lost hair?", answer: "Mesotherapy works best on weakened but still-active follicles. It cannot revive follicles that have been dormant for years or permanently scarred. Early intervention produces the best outcomes." },
-      ],
-    },
-  },
   {
     id: 'scalp-treatment',
     title: 'Scalp Health & Dandruff',
@@ -738,7 +739,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: '3',
     name: "Mohammed F.",
     treatment: "Hair Fall Therapy",
-    text: "Honest advice. Dr. Yashasve told me exactly what to expect from PRP and didn't make false promises. I'm seeing good density improvement now. Best dermatologist in Kothapet, LB Nagar.",
+    text: "Honest advice. Dr. Yashasve told me exactly what to expect from PRP and didn't make false promises. I'm seeing good density improvement now. Best dermatologist in SRK Puram, Kothapet, LB Nagar.",
     rating: 5,
     date: "3 weeks ago",
   },
@@ -931,8 +932,8 @@ export const CLINIC_PHOTOS: ClinicPhoto[] = [
   },
   {
     src: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?q=80&w=800&auto=format&fit=crop',
-    alt: 'Suseela Hospital exterior in Kothapet, LB Nagar, Hyderabad',
-    caption: 'Suseela Hospital, Kothapet, LB Nagar',
+    alt: 'Suseela Hospital exterior in SRK Puram, Kothapet, LB Nagar, Hyderabad',
+    caption: 'Suseela Hospital, SRK Puram, Kothapet, LB Nagar',
     span: 'wide',
   },
 ];

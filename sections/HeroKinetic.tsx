@@ -164,7 +164,7 @@ export const HeroKinetic: React.FC<HeroKineticProps> = ({ onBook }) => {
               <p className="text-stone-500 text-sm tracking-wide leading-relaxed">
                 <span className="text-secondary-900 font-medium">Suseela Hospital</span>
                 <span className="mx-2.5 text-stone-300">—</span>
-                Kothapet, LB&nbsp;Nagar, Hyderabad
+                SRK Puram, Kothapet, LB&nbsp;Nagar, Hyderabad
               </p>
             </motion.div>
 
