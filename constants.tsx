@@ -15,6 +15,10 @@ export const DOCTOR_PROFILE: DoctorProfile = {
   whatsapp: "918143179457",
   email: "dryashasvedermatologist@gmail.com", // PLACEHOLDER: Replace with real email
   mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9144094098665!2d78.54698757516448!3d17.36785108351603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f0883dbd7%3A0x44ea390247e683f9!2sDr%20Yashasve%20Chemudupati%20%7C%20Dermatologist%20in%20Kothapet!5e0!3m2!1sen!2sin!4v1786858793235!5m2!1sen!2sin",
+  // Plain (non-embed) Maps URL for "open in new tab" links -- the embed URL above
+  // is only valid inside an <iframe> and Google rejects it as a top-level page.
+  // CID derived from the place ID (0x44ea390247e683f9) baked into the embed URL above.
+  mapViewLink: "https://www.google.com/maps?cid=4965844221088400377",
   hours: [
     "Mon - Sat: 04:00 PM - 10:00 PM",
     "Sunday: By Appointment Only",
